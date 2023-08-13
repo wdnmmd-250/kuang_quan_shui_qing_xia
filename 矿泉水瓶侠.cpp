@@ -367,10 +367,10 @@ int main(){
 				if(line[i][j]=='#'){
 					line[i][j]='*';
 					int m=1;
-					while(line[i][j-m]=='#'){ //��ֹ���֣�<< >< >> << 
+					while(line[i][j+m]=='#'){ //��ֹ���֣�<< >< >> << 
 							m++; 
 						}
-						if(j-m<wt-1)
+						if(j+m<wt-1)
 							swap(line[i][j],line[i][j+m]);
 						if(j==wt-1)
 							line[i][j]='-';
